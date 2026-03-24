@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/1184710780.svg)](https://doi.org/10.5281/zenodo.19204383)
+
 # Modeling and Simulation of Dry Reforming of Biogas and Fischer–Tropsch Synthesis
 
 This repository contains the computational models and scripts developed within a Master's dissertation in Systems Engineering (PPGES – UPE).
