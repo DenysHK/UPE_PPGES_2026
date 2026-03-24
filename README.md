@@ -1,106 +1,50 @@
-# Dissertação de Mestrado – Modelagem e Simulação de Processos
+# Modeling and Simulation of Dry Reforming of Biogas and Fischer–Tropsch Synthesis
 
-[![DOI](https://zenodo.org/badge/doi/10.5281/zenodo.19098434.svg)](https://doi.org/10.5281/zenodo.19098434)
+This repository contains the computational models and scripts developed within a Master's dissertation in Systems Engineering (PPGES – UPE).
 
-Este repositório contém os modelos e códigos desenvolvidos no âmbito da dissertação de mestrado no Programa de Pós-Graduação em Engenharia de Sistemas (PPGES).
+## 🔬 Scope
 
----
+The repository includes:
 
-## 📌 Objetivo
+* Dry Reforming of Biogas (RSB) modeling
+* Syngas production analysis
+* Fischer–Tropsch synthesis (SFT) modeling
+* Product distribution via Anderson–Schulz–Flory (ASF)
+* Climate data analysis (C3S)
 
-Desenvolver e integrar modelos computacionais para simulação de processos envolvendo:
+## 📁 Repository Structure
 
-- Reforma seca do biogás (Dry Reforming of Methane – DRM)
-- Produção de gás de síntese (syngas)
-- Síntese de Fischer-Tropsch (FT) para obtenção de hidrocarbonetos líquidos
-- Integração entre simulação de processos e modelagem matemática
+### `dwsim/`
 
----
+Base simulation models developed in DWSIM:
 
-## 🔄 Fluxo do Processo
+* `RSB_Benguerba2015_BaseModel.dwxmz`
+* `SFT_Pandey2021_BaseModel.dwxmz`
 
-Biogás → DRM → Produção de syngas → FT → Hidrocarbonetos líquidos
+### `python/`
 
----
+Supporting scripts:
 
-## ⚙️ Metodologia
+* `ASF_Alpha_Distribution_Plot.py`
+* `C3S_GlobalTemperature_AnnualAbove1p5C_Plot.py`
+* `SFT_Pandey2021_LHHW_MassBalance_DWSIM.py`
 
-Os modelos foram desenvolvidos utilizando:
+## ⚙️ Requirements
 
-- Simulação de processos no DWSIM
-- Modelagem matemática em Python
-- Equação de estado de Peng-Robinson para descrição termodinâmica
-- Modelos cinéticos heterogêneos do tipo Langmuir-Hinshelwood-Hougen-Watson (LHHW)
+* Python 3.x
+* DWSIM
+* Standard scientific libraries (NumPy, Matplotlib, Pandas)
 
-A abordagem adotada combina simulação de processos com implementação de modelos matemáticos, permitindo maior flexibilidade na análise e integração dos sistemas de reforma e síntese.
+## 📌 Reproducibility
 
----
+All models and scripts are provided to ensure reproducibility of the results presented in the dissertation.
 
-## 📁 Estrutura do Repositório
-dwsim/
-Arquivos de simulação (.dwxmz)
+## 📚 Citation
 
-python/
-Scripts para modelagem, integração e cálculos auxiliares
+If you use this repository, please cite:
 
----
+KABBAZ, Denys Haluli. Modeling and simulation of dry reforming of biogas and Fischer–Tropsch synthesis. 2026. Software. DOI: (to be inserted)
 
-## ▶️ Como utilizar
+## 📄 License
 
-### 1. Simulações no DWSIM
-- Abrir os arquivos `.dwxmz` na pasta `/dwsim`
-- Executar as simulações conforme configuradas
-- Verificar condições operacionais (temperatura, pressão e vazões)
-
-### 2. Scripts em Python
-- Executar os scripts da pasta `/python` utilizando Python 3.x
-- Garantir que as dependências estejam instaladas (quando aplicável)
-- Utilizar os scripts para cálculos auxiliares e integração de modelos
-
----
-
-## 🔁 Reprodutibilidade
-
-Este repositório foi estruturado para permitir a reprodução dos resultados apresentados na dissertação.
-
-Para isso, recomenda-se:
-
-- Utilizar o software DWSIM
-- Executar os arquivos de simulação fornecidos
-- Rodar os scripts Python conforme descrito
-- Manter as mesmas condições operacionais utilizadas no estudo
-
----
-
-## 📊 Aplicações
-
-Os modelos desenvolvidos permitem:
-
-- Avaliação de desempenho de reatores catalíticos
-- Estudo do efeito de variáveis operacionais
-- Integração entre processos de reforma e síntese
-- Análise da produção de combustíveis sintéticos (C5+)
-
----
-
-## 📚 Contexto Acadêmico
-
-Este trabalho está inserido no contexto de:
-
-- Valorização do biogás como fonte renovável
-- Redução de emissões de gases de efeito estufa
-- Produção de combustíveis sustentáveis
-- Modelagem e simulação de processos químicos
-
----
-
-## 👨‍🎓 Autor
-
-Denys Haluli Kabbaz  
-Programa de Pós-Graduação em Engenharia de Sistemas (PPGES)
-
----
-
-## 📎 Observações
-
-Este repositório possui finalidade acadêmica e visa garantir transparência, rastreabilidade e reprodutibilidade dos resultados obtidos.
+To be defined (recommended: MIT License)
