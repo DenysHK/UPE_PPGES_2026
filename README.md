@@ -1,4 +1,4 @@
-[![DOI](https://zenodo.org/badge/1184710780.svg)](https://doi.org/10.5281/zenodo.19204383)
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.19204383-blue)](https://doi.org/10.5281/zenodo.19204383)
 
 # Modeling and Simulation of Dry Reforming of Biogas and Fischer–Tropsch Synthesis
 
