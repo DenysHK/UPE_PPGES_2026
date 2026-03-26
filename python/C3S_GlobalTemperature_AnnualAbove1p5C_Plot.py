@@ -289,11 +289,24 @@ def plot_ecmwf_style(long_df: pd.DataFrame) -> None:
     # Linha de referência climática (1,5 °C)
     ax.axhline(1.5, color="red", linestyle="--", linewidth=2)
 
+x_center = sum(ax.get_xlim()) / 2
+    ax.text(
+        x_center,
+        1.5,
+        "Limite de 1.5 °C",
+        color="red",
+        fontsize=11,
+        ha="center",
+        va="bottom",  # fica logo acima da linha
+        fontweight="bold"
+    )
+    
     # Configuração dos eixos
     ax.set_xlim(long_df["Year"].min() - 3, long_df["Year"].max() + 5)
-    ax.set_ylim(-0.25, 1.75)
+    ax.set_ylim(0, 1.70)
 
-    ax.set_ylabel("Aumento médio anual da Temperatura em relação à 1850-1900 (°C)")
+    ax.set_ylabel("Aumento médio anual da Temperatura (°C)", fontsize=12)
+    ax.set_xlabel("Ano", loc="right", fontsize=12)
 
     # Estética
     ax.spines["top"].set_visible(False)
